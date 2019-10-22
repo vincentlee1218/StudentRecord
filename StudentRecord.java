@@ -4,10 +4,7 @@ public class StudentRecord
    private int [] scores;
    
    //Constructs a StudentRecord object with an array of scores.
-   public StudentRecord(int [] s)
-   {
-      scores = s;
-   }
+   public StudentRecord(int [] s) {scores = s;}
    
    /** returns the average (arithmetic mean) of the values in scores
     *  whose subscripts are between first and last, inclusive
@@ -15,7 +12,11 @@ public class StudentRecord
     */
    private double average(int first, int last)
    {
-      return 0; //here so the class compiles
+      double sum=0, count=0;
+      for (int i = first; i <= last; i++) {
+    	  sum+=scores[i]; count++;
+      }
+      return sum/count;
    }
     
    /** returns true if each successive value in scores is greater than
@@ -23,7 +24,10 @@ public class StudentRecord
     */
    private boolean hasImproved()
    {
-      return false; //here so the class compiles
+       for (int i = 0; i < scores.length-1; i++) {
+    	   if (scores[i] > scores[i+1]) return false;
+       }
+	   return true; //here so the class compiles
    }  
    
    /** if the values in scores have imrpoved, returns the average of
@@ -33,6 +37,9 @@ public class StudentRecord
     */
    public double finalAverage()
    {
-      return 0; //here so the class compiles
+	  double finalAvg = 0;
+	  if (hasImproved()) finalAvg = average(scores.length/2, scores.length-1);
+	  else finalAvg = average(0, scores.length-1);
+	  return finalAvg;
    } 
 }
