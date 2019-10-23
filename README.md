@@ -15,7 +15,7 @@ The following table shows several lists of scores and how they would be averaged
 | 20, 50, 50, 53, 80 | Yes | (50 + 53 + 80) / 3.0 = 61.0 |
 | 20, 50, 50, 80 | Yes | (50 + 80) / 2.0 = 65.0 |
 
-Consider the following incomplete `StudentRecord` vlass declaration. Each `StudentRecord` object stores a list of that student's scores and contains methods to compute that student's final average.
+Consider the following incomplete `StudentRecord` class declaration. Each `StudentRecord` object stores a list of that student's scores and contains methods to compute that student's final average.
 
 ```
 public class StudentRecord
@@ -25,14 +25,14 @@ public class StudentRecord
                         
   // constructors and other data fields not shown
   
-  // returns the average (arithmetic mean) of teh values in scores
+  // returns the average (arithmetic mean) of the values in scores
   // whose subscripts are between first and last, inclusive
   // precondition: 0 M= first <= last < scores.length
   private double average(int first, int last)
   {  /* to be implemented in part (a) */   }
   
   
-  // returns true if each scucessive value in scores is greater
+  // returns true if each successive value in scores is greater
   // than or equal to the previous value;
   // otherwise, returns false
   private boolean hasImproved()
@@ -56,7 +56,7 @@ methods for this class.
 4. In the main() function of StudentRecordTester, you have 4 arrays.  
 a. An array of StudentRecord has been declared as students.
 
-# Directons
+# Directions
 1. 3 int arrays called a, b, c contain the grades from the example in the previous page. Use this to
 create the 3 students in the students array.
 2. Part A from the first page: Implement the method average(int first, int last) in the
