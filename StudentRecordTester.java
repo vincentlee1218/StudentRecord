@@ -2,7 +2,7 @@
 /**
  * Driver for the class StudentRecord
  *
- * @JKim 
+ * @author JKim 
  * @version (0.1)
  */
 public class StudentRecordTester
